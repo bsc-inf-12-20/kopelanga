@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.example.kopelanga"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.kopelanga"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -36,6 +36,9 @@ android {
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.8"
+    }
+    kotlinOptions {
+        jvmTarget = "11"
     }
 }
 
